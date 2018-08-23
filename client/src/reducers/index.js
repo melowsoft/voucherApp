@@ -1,8 +1,10 @@
-import { combineReducers } from 'redux';
-import { reducer as formReducer } from 'redux-form';
-import auth from './auth';
+import { combineReducers } from "redux";
+import { reducer as form } from "redux-form";
+import userReducer from "./user_reducer";
 
-export default combineReducers({
-  auth,
-  form: formReducer
+const rootReducer = combineReducers({
+  form,
+  user: userReducer
 });
+
+export default rootReducer;
