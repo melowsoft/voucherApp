@@ -1,36 +1,35 @@
 import axios from "axios";
-import api from "../api";
-import { AUTH_USER, UNAUTH_USER, AUTH_ERROR } from "./types";
-const ROOT_URL = "http://localhost:5000";
+import { AUTH_USER, AUTH_ERROR } from "./types";
 
-export const userLoggedIn = token => ({
-  type: AUTH_USER,
-  token
-});
+export const signup = (formProps, callback) => async dispatch => {
+  try {
+    const response = await axios.post("/api/signup", formProps);
 
-export const signin = credentials => dispatch =>
-  api.user.login(credentials).then(token => {
-    dispatch(userLoggedIn(token));
-    localStorage.setItem("token", token);
-  });
+    dispatch({ type: AUTH_USER, payload: response.data.token });
+    localStorage.setItem("token", response.data.token);
+    callback();
+  } catch (e) {
+    dispatch({ type: AUTH_ERROR, payload: "Email in use" });
+  }
+};
 
-export const signup = credentials => dispatch =>
-  api.user.register(credentials).then(token => {
-    dispatch(userLoggedIn(token));
-    localStorage.setItem("token", token);
-  });
+export const signin = (formProps, callback) => async dispatch => {
+  try {
+    const response = await axios.post("/api/signin", formProps);
 
-export const authError = error => {
-  return {
-    type: AUTH_ERROR,
-    payload: error
-  };
+    dispatch({ type: AUTH_USER, payload: response.data.token });
+    localStorage.setItem("token", response.data.token);
+    callback();
+  } catch (e) {
+    dispatch({ type: AUTH_ERROR, payload: "Invalid login credentials" });
+  }
 };
 
 export const signout = () => {
   localStorage.removeItem("token");
 
   return {
-    type: UNAUTH_USER
+    type: AUTH_USER,
+    payload: ""
   };
 };
