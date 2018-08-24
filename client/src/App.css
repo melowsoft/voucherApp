@@ -190,11 +190,16 @@ html {
             padding: 2rem;
         }
     
-        
+        .img-responsive{
+           margin-top: 10px
+        }
     
       
     
         }
+
+       
+    
 
 
     .growbaby-logo,
