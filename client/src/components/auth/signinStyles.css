@@ -57,12 +57,17 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 375px) {
     span.psw {
        display: block;
        float: none;
     }
     .cancelbtn {
        width: 100%;
+    }
+
+    .login-container {
+        width: 320px;
+       
     }
 }

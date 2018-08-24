@@ -36,7 +36,6 @@ class Header extends Component {
               <Link to="/">
                 {" "}
                 <img
-                  className="site-logo"
                   style={{ width: 100, marginTop: -7 }}
                   src="/logo.png"
                   alt="logo"
