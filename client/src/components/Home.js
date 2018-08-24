@@ -5,12 +5,12 @@ export default () => {
     <div>
       <section className="first-section">
         <div className="box">
-          <div style={{ flexGrow: 2 }}>
+          <div style={{ flexGrow: 1 }}>
             <center>
               <img src="/report.svg" alt="" className="img-responsive" />
             </center>
           </div>
-          <div className="main-message" style={{ flexGrow: 8 }}>
+          <div className="main-message" style={{ flexGrow: 1 }}>
             <center>
               <div style={{ marginTop: 50 }}>
                 <strong>
@@ -18,11 +18,11 @@ export default () => {
                     {" "}
                     Revenue - Cost
                     <br />
-                    is <span style={{ color: "green" }}>Not</span>
-                    <br />= Profit
+                    is <span style={{ color: "green" }}>Not</span> =<br />
+                    Profit
                   </h1>
                 </strong>
-                <h4>
+                <h4 style={{ marginTop: "7px" }}>
                   Let's help you Stop Loosing Money <br />
                   To Cash Flow And Pricing Problems...
                 </h4>
@@ -33,6 +33,7 @@ export default () => {
                   <button className="Ad-button">Start 30days Free Trial</button>
                 </strong>
                 <p>No credit Card required</p>
+                <hr style={{ marginTop: "5px" }} />
               </div>
             </center>
           </div>

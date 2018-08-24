@@ -29,6 +29,7 @@ html {
 
 .top-text {
     font-weight: 900;
+    text-align: right
     
 }
 
@@ -64,6 +65,7 @@ html {
     display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly
   
  
 }
@@ -76,9 +78,17 @@ html {
 
 .main-message {
     
-    color: #4d394b;
+    color: green;
     font-display: 'Open Sans';
+    display: flex;
+    justify-content: center;
+    background-color: #f2f5f7;
     
+}
+
+.main-message h4 {
+    color: gold;
+    text-align: right
 }
 .img-responsive {
     max-width: 450px;
@@ -96,8 +106,9 @@ html {
 }
 
 .second-section {
-    background-color: #f8f9fa;
+    background-color: #f2f5f7;
     padding: 4rem;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 414px) {
