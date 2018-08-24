@@ -36,7 +36,8 @@ class Header extends Component {
               <Link to="/">
                 {" "}
                 <img
-                  style={{ width: 100, marginTop: -7 }}
+                  style={{ height: "50px", width: "50px" }}
+                  className="img img-fluid"
                   src="/logo.png"
                   alt="logo"
                 />
@@ -67,7 +68,7 @@ class Header extends Component {
             <NavbarBrand href="/">
               <img
                 src="/logo.png"
-                style={{ width: 100, marginTop: -7 }}
+                style={{ height: "70px", width: "70px" }}
                 alt="logo"
               />
             </NavbarBrand>
