@@ -35,7 +35,12 @@ class Header extends Component {
             <NavbarBrand>
               <Link to="/">
                 {" "}
-                <img src="/logo.png" alt="logo" />
+                <img
+                  className="site-logo"
+                  style={{ width: 100, marginTop: -7 }}
+                  src="/logo.png"
+                  alt="logo"
+                />
               </Link>
             </NavbarBrand>
             <NavbarBrand>
@@ -45,9 +50,11 @@ class Header extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink className="btn btn-outline-success" href="/signin">
-                    Signout
-                  </NavLink>
+                  <Link to="/signout">
+                    <NavLink className="btn btn-outline-success">
+                      Signout
+                    </NavLink>
+                  </Link>
                 </NavItem>
               </Nav>
             </Collapse>
