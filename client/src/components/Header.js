@@ -1,34 +1,113 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
-import './HeaderStyle.css';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+
+import "./HeaderStyle.css";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink
+} from "reactstrap";
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   renderLinks() {
     if (this.props.authenticated) {
       return (
         <div>
-          <Link to="/signout">Sign Out</Link>
-          <Link to="/feature">Feature</Link>
+          <Navbar color="light" light expand="md">
+            <NavbarBrand>
+              <Link to="/">
+                {" "}
+                <img src="/logo.png" alt="logo" />
+              </Link>
+            </NavbarBrand>
+            <NavbarBrand>
+              <h2>GrowBaby</h2>
+            </NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <NavItem>
+                  <NavLink className="btn btn-outline-success" href="/signin">
+                    Signout
+                  </NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Navbar>
         </div>
       );
     } else {
       return (
         <div>
-          <Link to="/signup">Sign Up</Link>
-          <Link to="/signin">Sign In</Link>
+          <Navbar color="light" light expand="md">
+            <NavbarBrand href="/">
+              <img
+                src="/logo.png"
+                style={{ width: 100, marginTop: -7 }}
+                alt="logo"
+              />
+            </NavbarBrand>
+            <NavbarBrand>
+              <h2>GrowBaby</h2>
+            </NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <Nav className="ml-auto" navbar>
+                <div className="menu-item">
+                  <NavItem>
+                    <NavLink className="btn btn-outline-success">
+                      <Link to="#">About</Link>
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink className="btn btn-outline-success">
+                      <Link to="#">Pricing</Link>
+                    </NavLink>
+                  </NavItem>
+                </div>
+                <NavItem className="nav-item">
+                  <Link to="/signin">
+                    {" "}
+                    <NavLink className="btn btn-outline-success">
+                      Signin
+                    </NavLink>
+                  </Link>
+                </NavItem>
+                <NavItem className="nav-item">
+                  <Link to="/signup">
+                    <NavLink className="btn btn-outline-success">
+                      Signup
+                    </NavLink>
+                  </Link>
+                </NavItem>
+              </Nav>
+            </Collapse>
+          </Navbar>
         </div>
       );
     }
   }
 
   render() {
-    return (
-      <div className="header">
-        <Link to="/">Redux Auth</Link>
-        {this.renderLinks()}
-      </div>
-    );
+    return <div className="header">{this.renderLinks()}</div>;
   }
 }
 
