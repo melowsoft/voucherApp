@@ -12,7 +12,7 @@ html {
     
     font-family: 'Raleway';
     line-height: 1.4em;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -83,12 +83,18 @@ html {
     display: flex;
     justify-content: center;
     background-color: #f2f5f7;
+    border-radius: 20px 0 20px 0;
     
 }
 
 .main-message h4 {
-    color: gold;
-    text-align: right
+    color: #f7bd0f;
+    text-align: right;
+    font-family: 'Raleway';
+}
+
+.main-message p {
+    color: #f7bd0f;
 }
 .img-responsive {
     max-width: 450px;
@@ -122,7 +128,14 @@ html {
       max-height: 300px;
      
     }
-  }
+    .text-only {
+        padding-right: 10px;
+    }
+
+  } .second-section {
+        
+        padding: 2rem;
+    }
 
 
 
@@ -168,7 +181,14 @@ html {
         padding: 2rem;
     }
     
+    .img-section {
+        margin-bottom: 20px;
+    }
 
+    .text-only {
+        padding-right: 10px;
+    }
+    
     
   }
 
@@ -176,6 +196,14 @@ html {
 .navbar h2 {
     font-size: 20px;
    
+}
+
+.img-section {
+    margin-bottom: 20px;
+}
+.second-section {
+        
+    padding: 2rem;
 }
 }
 
@@ -190,9 +218,15 @@ html {
     }
 
     .top-text {
-        font-weight: 950px;
+        font-weight: 950px bold;
         
     }
+
+    .main-message h4 {
+        padding: 5px;
+    }
+
+    
 
     }
 

@@ -5,14 +5,14 @@ export default () => {
     <div>
       <section className="first-section">
         <div className="box">
-          <div style={{ flexGrow: 1 }}>
+          <div className="img-section" style={{ flexGrow: 1 }}>
             <center>
               <img src="/report.svg" alt="" className="img-responsive" />
             </center>
           </div>
           <div className="main-message" style={{ flexGrow: 1 }}>
             <center>
-              <div style={{ marginTop: 50 }}>
+              <div className="text-only" style={{ marginTop: 50 }}>
                 <strong>
                   <h1 className="top-text">
                     {" "}
@@ -22,7 +22,7 @@ export default () => {
                     Profit
                   </h1>
                 </strong>
-                <h4 style={{ marginTop: "7px" }}>
+                <h4 style={{ marginTop: "10px" }}>
                   Let's help you Stop Loosing Money <br />
                   To Cash Flow And Pricing Problems...
                 </h4>
@@ -43,7 +43,11 @@ export default () => {
         <div className="row">
           <div className="col-sm-4">
             <div className="icons">
-              <img src="/images/price.png" alt="" style={{ width: "60px" }} />
+              <img
+                src="/images/price.png"
+                alt=""
+                style={{ width: "60px", marginBottom: "10px" }}
+              />
             </div>
             <h4>Price Optimization</h4>
             <p>
@@ -57,7 +61,7 @@ export default () => {
               <img
                 src="/images/management.png"
                 alt=""
-                style={{ width: "60px" }}
+                style={{ width: "60px", marginBottom: "10px" }}
               />
             </div>
             <h4>Cash Flow Management</h4>
@@ -73,7 +77,7 @@ export default () => {
               <img
                 src="/images/bookeeping.png"
                 alt=""
-                style={{ width: "60px" }}
+                style={{ width: "60px", marginBottom: "10px" }}
               />
             </div>
             <h4>Easy Book Keeping</h4>
@@ -91,7 +95,7 @@ export default () => {
               <img
                 src="/images/optimization.png"
                 alt=""
-                style={{ width: "60px" }}
+                style={{ width: "60px", marginBottom: "10px" }}
               />
             </div>
             <h4>Profit Optimization</h4>
@@ -105,7 +109,7 @@ export default () => {
               <img
                 src="/images/statement.png"
                 alt=""
-                style={{ width: "60px" }}
+                style={{ width: "60px", marginBottom: "10px" }}
               />
             </div>
             <h4>Generate Financial Statements</h4>
@@ -119,7 +123,7 @@ export default () => {
               <img
                 src="/images/bookeeping.png"
                 alt=""
-                style={{ width: "60px" }}
+                style={{ width: "60px", marginBottom: "10px" }}
               />
             </div>
             <h4>Easy Book Keeping</h4>
