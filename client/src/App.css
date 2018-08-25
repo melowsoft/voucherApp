@@ -82,11 +82,12 @@ html {
 
 .main-message {
     
-    color: #92f992;
+    color: green;
     font-display: 'Open Sans';
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #f2f5f7;
+    
     border-radius: 50px 0 50px 0;
     
 }
@@ -102,7 +103,7 @@ html {
 }
 
 .main-message p {
-    color: white;
+    color: #f7bd0f;
 }
 .img-responsive {
     max-width: 450px;
