@@ -40,6 +40,14 @@ export default () => {
         </div>
       </section>
       <section className="second-section">
+        <div class="row  services-header">
+          <div class="col-full">
+            <h1 class="display-4">
+              We’ve got everything you need to launch and grow your business
+            </h1>
+          </div>
+        </div>
+
         <div className="row">
           <div className="col-sm-4">
             <div className="icons">

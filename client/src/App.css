@@ -8,7 +8,11 @@ html {
 }
 
 .second-section {
-    padding: 20px;
+    
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
     
     font-family: 'Raleway';
     line-height: 1.4em;
@@ -78,13 +82,17 @@ html {
 
 .main-message {
     
-    color: green;
+    color: #92f992;
     font-display: 'Open Sans';
     display: flex;
     justify-content: center;
-    background-color: #f2f5f7;
-    border-radius: 20px 0 20px 0;
+    background-color: black;
+    border-radius: 50px 0 50px 0;
     
+}
+
+.services-header{
+    margin-bottom: 80px;
 }
 
 .main-message h4 {
@@ -94,7 +102,7 @@ html {
 }
 
 .main-message p {
-    color: #f7bd0f;
+    color: white;
 }
 .img-responsive {
     max-width: 450px;
@@ -132,7 +140,19 @@ html {
         padding-right: 10px;
     }
 
-  } .second-section {
+    .img-section {
+        margin-bottom: 50px;
+        margin-bottom: 30px
+    }
+    .main-message {
+        margin-bottom: 50px;
+        margin-top: 20px
+    }
+
+  } 
+
+
+  .second-section {
         
         padding: 2rem;
     }
@@ -182,11 +202,16 @@ html {
     }
     
     .img-section {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+        margin-bottom: 30px
     }
 
     .text-only {
         padding-right: 10px;
+    }
+    .main-message {
+        margin-bottom: 50px;
+        margin-top: 20px
     }
     
     
@@ -199,11 +224,21 @@ html {
 }
 
 .img-section {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-bottom: 30px
 }
 .second-section {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
         
-    padding: 2rem;
+   
+}
+
+.main-message {
+    margin-bottom: 50px;
+    margin-top: 20px
 }
 }
 
