@@ -6,12 +6,13 @@ export default () => {
       <section className="first-section">
         <div className="row">
           <div
-            className="img-section col l6 m6 s12"
+            className="img-section col l6 m12 s12"
             style={{ padding: "2rem" }}
           >
             <img src="/report.svg" alt="" class="responsive-img" />
           </div>
-          <div className="main-message col l6 m6 s12">
+          <div className="col l1" />
+          <div className="main-message col l5 m12 s12">
             <center>
               <div className="text-only" style={{ marginTop: 50 }}>
                 <strong>
