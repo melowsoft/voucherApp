@@ -100,31 +100,17 @@ html {
 
 
 
-/* @media screen and (max-width: 414px) {
-    .menu-item{
+@media screen and (max-width: 414px) {
+    .second-section {
+    
+        padding: 2rem;
         
-        display: none;
     }
 
-    .img-responsive {
-     max-width: 300px;
-      max-height: 300px;
-     
+    .first-section{
+        padding: 2rem;
     }
-    .text-only {
-        padding-right: 10px;
-    }
-
-    .img-section {
-        margin-bottom: 50px;
-        margin-bottom: 30px
-    }
-    .main-message {
-        margin-bottom: 50px;
-        margin-top: 20px
-    }
-
-  }  */
+  } 
 
 
   
@@ -145,70 +131,6 @@ html {
         
   }
 
-  @media screen and (max-width: 375px) {
-    .menu-item{
-       
-        display: none;
-    }
-
-    .img-responsive {
-        max-width: 250px;
-         max-height: 250px;
-         margin-top: 10px;
-         margin-left: 20px;
-         margin-bottom: 10px;
-       }
-
-       .Ad-button{ 
-        width: 200px;
-        border-radius: 5px
-    }
-        
-    .second-section {
-        
-        padding: 2rem;
-    }
-    
-    .img-section {
-        margin-bottom: 50px;
-        margin-bottom: 30px
-    }
-
-    .text-only {
-        padding-right: 10px;
-    }
-    .main-message {
-        margin-bottom: 50px;
-        margin-top: 20px
-    }
-    
-    
-  }
-
-  @media screen and (min-width: 320px) {
-.navbar h2 {
-    font-size: 20px;
-   
-}
-
-.img-section {
-    margin-bottom: 50px;
-    margin-bottom: 30px
-}
-.second-section {
-    padding-top: 100px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-        
-   
-}
-
-.main-message {
-    margin-bottom: 50px;
-    margin-top: 20px
-}
-}
 
 @media screen and (min-width: 1440px) {
     .first-section {
@@ -251,6 +173,31 @@ html {
 
 
     
+  @media screen and (max-width: 375px) {
+    .first-section{
+    padding: 2rem;
+}
+       
+.second-section {
+    
+    padding: 2rem;
+    
+}
+    
+    
+  }
+
+  @media screen and (min-width: 320px) {
+.first-section{
+    padding: 4rem;
+}
+
+.second-section {
+    
+    padding: 2rem;
+    
+}
+}
 
    
  

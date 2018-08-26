@@ -57,7 +57,7 @@ export default () => {
               <img
                 src="/images/price.png"
                 alt=""
-                style={{ width: "60px", marginBottom: "10px" }}
+                style={{ width: "60px", marginBottom: "5px" }}
               />
             </div>
             <h4>Price Optimization</h4>
@@ -73,7 +73,7 @@ export default () => {
               <img
                 src="/images/bookeeping.png"
                 alt=""
-                style={{ width: "60px", marginBottom: "10px" }}
+                style={{ width: "60px", marginBottom: "5px" }}
               />
             </div>
             <h4>Easy Book Keeping</h4>
@@ -90,7 +90,7 @@ export default () => {
               <img
                 src="/images/management.png"
                 alt=""
-                style={{ width: "60px", marginBottom: "10px" }}
+                style={{ width: "60px", marginBottom: "5px" }}
               />
             </div>
             <h4>Real Time Reporting</h4>
@@ -108,7 +108,7 @@ export default () => {
               <img
                 src="/images/management.png"
                 alt=""
-                style={{ width: "60px", marginBottom: "10px" }}
+                style={{ width: "60px", marginBottom: "5px" }}
               />
             </div>
             <h4>Cash Flow Management</h4>
@@ -124,7 +124,7 @@ export default () => {
               <img
                 src="/images/optimization.png"
                 alt=""
-                style={{ width: "60px", marginBottom: "10px" }}
+                style={{ width: "60px", marginBottom: "5px" }}
               />
             </div>
             <h4>Profit Optimization</h4>
@@ -138,7 +138,7 @@ export default () => {
               <img
                 src="/images/board.png"
                 alt=""
-                style={{ width: "60px", marginBottom: "10px" }}
+                style={{ width: "60px", marginBottom: "5px" }}
               />
             </div>
             <h4>Generate Financial Statements</h4>
