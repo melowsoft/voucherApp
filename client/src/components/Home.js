@@ -4,13 +4,14 @@ export default () => {
   return (
     <div>
       <section className="first-section">
-        <div className="box">
-          <div className="img-section" style={{ flexGrow: 1 }}>
-            <center>
-              <img src="/report.svg" alt="" className="img-responsive" />
-            </center>
+        <div className="row">
+          <div
+            className="img-section col l6 m6 s12"
+            style={{ padding: "2rem" }}
+          >
+            <img src="/report.svg" alt="" class="responsive-img" />
           </div>
-          <div className="main-message" style={{ flexGrow: 1 }}>
+          <div className="main-message col l6 m6 s12">
             <center>
               <div className="text-only" style={{ marginTop: 50 }}>
                 <strong>
@@ -22,18 +23,19 @@ export default () => {
                     Profit
                   </h1>
                 </strong>
-                <h4 style={{ marginTop: "10px" }}>
+                <h5 style={{ marginTop: "10px" }}>
                   Let's help you Stop Loosing Money <br />
                   To Cash Flow And Pricing Problems...
-                </h4>
+                </h5>
               </div>
               <div style={{ marginTop: 50 }}>
                 <strong>
                   {" "}
-                  <button className="Ad-button">Start 30days Free Trial</button>
+                  <button className="btn-large green darken-3 waves-effect waves-light">
+                    Start 30days Free Trial
+                  </button>
                 </strong>
                 <p>No credit Card required</p>
-                <hr style={{ marginTop: "5px" }} />
               </div>
             </center>
           </div>
@@ -41,15 +43,16 @@ export default () => {
       </section>
       <section className="second-section">
         <div class="row  services-header">
-          <div class="col-full">
-            <h1 class="display-4">
-              We’ve got everything you need to launch and grow your business
-            </h1>
+          <div class="col">
+            <h2>
+              We’ve got everything you need to launch and grow a profitable and
+              cash positive business
+            </h2>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-sm-4">
+          <div className="col l4 m4 s12">
             <div className="icons">
               <img
                 src="/images/price.png"
@@ -64,7 +67,43 @@ export default () => {
               again loose money on poor pricing
             </p>
           </div>
-          <div className="col-sm-4">
+
+          <div className="col l4 m4 s12">
+            <div className="icons">
+              <img
+                src="/images/bookeeping.png"
+                alt=""
+                style={{ width: "60px", marginBottom: "10px" }}
+              />
+            </div>
+            <h4>Easy Book Keeping</h4>
+            <p>
+              Record all sales and expenses as they come in , fill in your
+              different expenses for cash flow statements and other business
+              statements you will need if you ever want to seek funding or share
+              with your team
+            </p>
+          </div>
+
+          <div className="col l4 m4 s12">
+            <div className="icons">
+              <img
+                src="/images/management.png"
+                alt=""
+                style={{ width: "60px", marginBottom: "10px" }}
+              />
+            </div>
+            <h4>Real Time Reporting</h4>
+            <p>
+              you can actually see how profitable you are at every point in time
+              using this tool, how high or low your expenses are and how high or
+              low your revenue is plus , every week , detailed reports are sent
+              out to show you exactly how your business is doing.
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col l4 m4 s12">
             <div className="icons">
               <img
                 src="/images/management.png"
@@ -80,25 +119,7 @@ export default () => {
               have full knowledge about your cash movements and control as well
             </p>
           </div>
-          <div className="col-sm-4">
-            <div className="icons">
-              <img
-                src="/images/bookeeping.png"
-                alt=""
-                style={{ width: "60px", marginBottom: "10px" }}
-              />
-            </div>
-            <h4>Easy Book Keeping</h4>
-            <p>
-              Record all sales and expenses as they come in , fill in your
-              different expenses for cash flow statements and other business
-              statements you will need if you ever want to seek funding or share
-              with your team
-            </p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-4">
+          <div className="col l4 m4 s12">
             <div className="icons">
               <img
                 src="/images/optimization.png"
@@ -112,10 +133,10 @@ export default () => {
               use costs that isn't complete for pricing and then , loose money
             </p>
           </div>
-          <div className="col-sm-4">
+          <div className="col l4 m4 s12">
             <div className="icons">
               <img
-                src="/images/statement.png"
+                src="/images/board.png"
                 alt=""
                 style={{ width: "60px", marginBottom: "10px" }}
               />
@@ -124,22 +145,6 @@ export default () => {
             <p>
               You can create balance sheet , cash flow statement , profit and
               loss statements amongst others as fast as you can order an uber
-            </p>
-          </div>
-          <div className="col-sm-4">
-            <div className="icons">
-              <img
-                src="/images/bookeeping.png"
-                alt=""
-                style={{ width: "60px", marginBottom: "10px" }}
-              />
-            </div>
-            <h4>Easy Book Keeping</h4>
-            <p>
-              Record all sales and expenses as they come in , fill in your
-              different expenses for cash flow statements and other business
-              statements you will need if you ever want to seek funding or share
-              with your team
             </p>
           </div>
         </div>

@@ -17,41 +17,43 @@ class Signin extends Component {
     const { handleSubmit } = this.props;
 
     return (
-      <div className="login-container">
+      <div className="login-form container">
         <h2>Login Form</h2>
         <form onSubmit={handleSubmit(this.onSubmit)}>
-          <div class="imgcontainer">
-            <img src="/avatar.png" alt="Avatar" class="avatar" />
-          </div>
-          <div class="container">
-            <fieldset>
-              <label>Email</label>
+          <div className="row">
+            <div className="input-field col s12">
               <Field
                 name="email"
                 type="text"
                 component="input"
                 autoComplete="none"
+                id="email"
               />
-            </fieldset>
-            <fieldset>
-              <label>Password</label>
-              <Field
-                name="password"
-                type="password"
-                component="input"
-                autoComplete="none"
-              />
-            </fieldset>
-            <div>{this.props.errorMessage}</div>
-            <button>Sign In!</button>
+              <label for="email">Email</label>
+            </div>
+            <div className="row">
+              <div className="input-field col s12">
+                <Field
+                  name="password"
+                  type="password"
+                  component="input"
+                  autoComplete="none"
+                  id="password"
+                />
+                <label for="email">Password</label>
+                <div>{this.props.errorMessage}</div>
+              </div>
+            </div>
+            <div className="row">
+              <button className="btn-large waves-effect waves-light">
+                Sign In
+              </button>
+            </div>
           </div>
 
-          <div class="container">
-            <button type="button" class="cancelbtn">
-              Cancel
-            </button>
+          <div class="row">
             <span class="psw">
-              Forgot <a href="#">password?</a>
+              Forgot <a>password?</a>
             </span>
           </div>
         </form>

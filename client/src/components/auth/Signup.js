@@ -17,30 +17,36 @@ class Signup extends Component {
     const { handleSubmit } = this.props;
 
     return (
-      <div className="login-container">
+      <div className="login-form container">
         <h2>Signup Form</h2>
         <form onSubmit={handleSubmit(this.onSubmit)}>
-          <div class="container">
-            <fieldset>
-              <label>Email</label>
+          <div className="row">
+            <div className="input-field col s12">
               <Field
                 name="email"
                 type="text"
                 component="input"
                 autoComplete="none"
+                id="email"
               />
-            </fieldset>
-            <fieldset>
-              <label>Password</label>
-              <Field
-                name="password"
-                type="password"
-                component="input"
-                autoComplete="none"
-              />
-            </fieldset>
-            <div>{this.props.errorMessage}</div>
-            <button>Sign Up!</button>
+              <label for="email">Email</label>
+            </div>
+            <div className="row">
+              <div className="input-field col s12">
+                <Field
+                  name="password"
+                  type="password"
+                  component="input"
+                  autoComplete="none"
+                />
+                <label for="email">Password</label>
+                <div>{this.props.errorMessage}</div>
+              </div>
+            </div>
+
+            <button className="btn-large waves-effect waves-light">
+              Sign Up
+            </button>
           </div>
         </form>
       </div>

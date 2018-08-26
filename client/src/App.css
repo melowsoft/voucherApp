@@ -7,6 +7,10 @@ html {
     
 }
 
+.first-section{
+    padding: 4rem;
+}
+
 .second-section {
     
     padding-top: 100px;
@@ -21,10 +25,7 @@ html {
 }
 
 
-.navbar a:hover {
-    color: white;
-    text-decoration: none;
-}
+
 
 .flex {
     display: flex;
@@ -32,53 +33,17 @@ html {
 
 
 .top-text {
-    font-weight: 900;
-    text-align: right
+    font-weight: 800;
+    
     
 }
 
-.Ad-button{ 
-    width: 300px;
-    
-    border-radius: 5px;
-    background-color: greenyellow;
-  
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        font-size: 20px !important;
-}
 
-.Ad-button:hover {
-    opacity: 0.8;
-}
 
-.Ads-text {
-   
-}
 
-.ml-auto{
-    padding-right: 5px; 
 
-}
 
-.box {
-    display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly
-  
- 
-}
 
-.first-section {
-    min-height: 80vh;
-   
-    color: aliceblue
-}
 
 .main-message {
     
@@ -92,33 +57,19 @@ html {
     
 }
 
-.services-header{
-    margin-bottom: 80px;
-}
 
-.main-message h4 {
+
+.main-message h5 {
     color: #f7bd0f;
-    text-align: right;
+    
     font-family: 'Raleway';
 }
 
 .main-message p {
     color: #f7bd0f;
 }
-.img-responsive {
-    max-width: 450px;
-  max-height: 450px;
- 
-}
-.nav-item{
-    margin-right: 5px;
-}
 
-.menu-item{
-    margin-right: 400px;
-    display: flex;
 
-}
 
 .second-section {
     background-color: #f2f5f7;
@@ -126,7 +77,30 @@ html {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 414px) {
+
+.growbaby-logo,
+  .copyright{
+    width: 150px;
+    position: relative;
+    left: 3em;
+  }
+  
+  .copyright{
+      top: 1em;
+  }
+  
+  .footer{
+      background-color: #293242;
+   
+      color: #fff;
+      bottom: 0;
+      
+      width: 100%;
+    }
+
+
+
+/* @media screen and (max-width: 414px) {
     .menu-item{
         
         display: none;
@@ -150,19 +124,14 @@ html {
         margin-top: 20px
     }
 
-  } 
-
-
-  .second-section {
-        
-        padding: 2rem;
-    }
-
+  }  */
 
 
   
 
-  @media screen and (max-width: 1024px) {
+  
+
+  /* @media screen and (max-width: 1024px) {
     .menu-item{
         
         display: none;
@@ -173,9 +142,7 @@ html {
        
         color: aliceblue
     }
-    
-
-    
+        
   }
 
   @media screen and (max-width: 375px) {
@@ -277,31 +244,13 @@ html {
     
       
     
-        }
+        } */
 
        
     
 
 
-    .growbaby-logo,
-.copyright{
-  width: 150px;
-  position: relative;
-  left: 3em;
-}
-
-.copyright{
-    top: 1em;
-}
-
-.footer{
-    background-color: #293242;
- 
-    color: #fff;
-    bottom: 0;
     
-    width: 100%;
-  }
 
    
  

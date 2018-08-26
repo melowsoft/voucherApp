@@ -2,19 +2,20 @@ import React from "react";
 
 export default () => {
   return (
-    <div>
-      <div className="row footer">
-        <div className="col-md-9 fcontent">
+    <footer className="page-footer green darken-3">
+      <div className="container-fluid">
+        <div className="col l6 s12">
           <img
             src="/images/logo.png"
             alt="growbaby logo"
             className="growbaby-logo"
+            style={{ width: "50px", height: "50px" }}
           />
         </div>
-        <div className="col-md-3">
-          <p className="copyright">&copy; Growbaby 2018</p>
+        <div class="footer-copyright">
+          <div class="container">&copy; Growbaby 2018</div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
