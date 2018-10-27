@@ -9,26 +9,12 @@ class Navbar extends Component {
         <nav className="green darken-3">
           <div className="nav-wrapper">
             <Link to="/" className="brand-logo">
-              <img
-                style={{ height: "70px", width: "70px" }}
-                className="img img-fluid"
-                src="/logo.png"
-                alt="logo"
-              />
+              VoucherApp
             </Link>
             <a data-target="mobile-demo" className="sidenav-trigger">
               <i className="fa fa-bars" />
             </a>
             <ul className="right hide-on-med-and-down">
-              <li>
-                <Link to="/">About</Link>
-              </li>
-              <li>
-                <Link to="/">Contacts</Link>
-              </li>
-              <li>
-                <Link to="/">Why GrowBaby?</Link>
-              </li>
               <li>
                 <Link to="/signout">Signout</Link>
               </li>
@@ -37,16 +23,7 @@ class Navbar extends Component {
 
           <ul className="sidenav" id="mobile-demo">
             <li>
-              <Link to="/">About</Link>
-            </li>
-            <li>
-              <Link to="/">Contacts</Link>
-            </li>
-            <li>
-              <Link to="/">Why GrowBaby?</Link>
-            </li>
-            <li>
-              <Link to="/signin">Signin</Link>
+              <Link to="/signin">Signout</Link>
             </li>
           </ul>
         </nav>
@@ -68,32 +45,20 @@ class Navbar extends Component {
             </a>
             <ul className="right hide-on-med-and-down">
               <li>
-                <Link to="/">About</Link>
-              </li>
-              <li>
-                <Link to="/">Contacts</Link>
-              </li>
-              <li>
-                <Link to="/">Why GrowBaby?</Link>
-              </li>
-              <li>
                 <Link to="/signin">Signin</Link>
+              </li>
+              <li>
+                <Link to="/signup">Signup</Link>
               </li>
             </ul>
           </div>
 
           <ul className="sidenav" id="mobile-demo">
             <li>
-              <Link to="/">About</Link>
-            </li>
-            <li>
-              <Link to="/">Contacts</Link>
-            </li>
-            <li>
-              <Link to="/">Why GrowBaby?</Link>
-            </li>
-            <li>
               <Link to="/signin">Signin</Link>
+            </li>
+            <li>
+              <Link to="/signout">Signup</Link>
             </li>
           </ul>
         </nav>

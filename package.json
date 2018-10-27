@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "bezop",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,8 +12,6 @@
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
-    
-    
   },
   "author": "",
   "license": "ISC",
