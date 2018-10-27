@@ -8,7 +8,7 @@ class Navbar extends Component {
       return (
         <nav className="green darken-3">
           <div className="nav-wrapper">
-            <Link to="/" className="brand-logo">
+            <Link to="/dashboard" className="brand-logo">
               VoucherApp
             </Link>
             <a data-target="mobile-demo" className="sidenav-trigger">
