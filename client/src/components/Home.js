@@ -33,7 +33,7 @@ export default () => {
               <div style={{ marginTop: 20 }}>
                 <strong>
                   {" "}
-                  <Link to="/dashboard">
+                  <Link to="/signin">
                     {" "}
                     <button className="btn-large green darken-3 waves-effect waves-light">
                       Start here
