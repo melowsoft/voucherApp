@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default () => {
   return (
@@ -9,7 +10,7 @@ export default () => {
             className="img-section col l6 m12 s12"
             style={{ padding: "2rem" }}
           >
-            <img src="/report.svg" alt="" class="responsive-img" />
+            <img src="/report.svg" alt="" className="responsive-img" />
           </div>
           <div className="col l1" />
           <div className="main-message col l5 m12 s12">
@@ -19,24 +20,27 @@ export default () => {
                 <strong>
                   <h2 className="top-text">
                     {" "}
-                    Revenue - Cost
+                    You can
                     <br />
-                    is <span style={{ color: "green" }}>Not</span> = Profit
+                    now buy vouchers online
                   </h2>
                 </strong>
                 <h5 style={{ marginTop: "10px" }}>
-                  Let's help you Stop Loosing Money <br />
-                  To Cash Flow And Pricing Problems...
+                  purchasing vouchers has been <br />
+                  made easy with our voucher app...
                 </h5>
               </div>
               <div style={{ marginTop: 20 }}>
                 <strong>
                   {" "}
-                  <button className="btn-large green darken-3 waves-effect waves-light">
-                    Start 30days Free Trial
-                  </button>
+                  <Link to="/dashboard">
+                    {" "}
+                    <button className="btn-large green darken-3 waves-effect waves-light">
+                      Start here
+                    </button>
+                  </Link>
                 </strong>
-                <p>No credit Card required</p>
+                <p>Signup to begin</p>
               </div>
             </center>
           </div>

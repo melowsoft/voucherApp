@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import requireAuth from "./requireAuth";
+import VoucherList from "./VoucherList";
 
 class Dashboard extends Component {
   render() {
     return (
-      <div>
-        <h1>Dashboard</h1>
+      <div className="container">
+        <VoucherList />
       </div>
     );
   }

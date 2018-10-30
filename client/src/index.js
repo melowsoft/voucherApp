@@ -13,6 +13,7 @@ import Signup from "./components/auth/Signup";
 import Signout from "./components/auth/Signout";
 import Signin from "./components/auth/Signin";
 import Dashboard from "./components/Dashboard";
+import Checkout from "./components/Checkout";
 
 const store = createStore(
   reducers,
@@ -31,6 +32,7 @@ ReactDOM.render(
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/signout" component={Signout} />
         <Route path="/signin" component={Signin} />
+        <Route path="/checkout" component={Checkout} />
       </App>
     </BrowserRouter>
   </Provider>,

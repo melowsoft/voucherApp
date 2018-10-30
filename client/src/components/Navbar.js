@@ -16,12 +16,18 @@ class Navbar extends Component {
             </a>
             <ul className="right hide-on-med-and-down">
               <li>
+                <Link to="/dashboard">Dashboard</Link>
+              </li>
+              <li>
                 <Link to="/signout">Signout</Link>
               </li>
             </ul>
           </div>
 
           <ul className="sidenav" id="mobile-demo">
+            <li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
             <li>
               <Link to="/signin">Signout</Link>
             </li>
